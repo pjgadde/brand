@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        timestamps()
+        bat 'echo $PATH'
       }
     }
     stage('Qa') {
